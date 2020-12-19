@@ -1,0 +1,76 @@
+:root {
+	--primary-0: #102a43;
+	--primary-1: #243b53;
+	--primary-2: #334e68;
+	--primary-3: #486581;
+	--primary-4: #627d98;
+	--primary-5: #829ab1;
+	--primary-6: #9fb3c8;
+	--primary-7: #bcccdc;
+	--primary-8: #d9e2ec;
+	--primary-9: #f0f4f8;
+	--secondary-0: #234670;
+	--secondary-1: #173972;
+	--secondary-2: #03396c;
+	--accents-0: #1a1d1e;
+	--accents-1: #414442;
+	--accents-2: #7d7d7d;
+	--accents-3: #a4a4a4;
+	--accents-4: #cfcece;
+	--accents-5: #e3e3e3;
+	--accents-6: #f4f3ee;
+	--accents-7: #f4f3ee;
+	--background-primary: #f1fcf7;
+	--background-auxiliary: #f1f3f5;
+	--background-tertiary: #fff9e9;
+	--text-base: #000000;
+	--text-primary: #000000;
+	--text-auxiliary: #151515;
+	--text-tertiary: #505050;
+	--text-quaternary: #ffffff;
+	--hover-0: rgba(0, 0, 0, 0.075);
+	--hover-1: rgba(0, 0, 0, 0.15);
+	--hover-2: rgba(0, 0, 0, 0.25);
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+html {
+	height: 100%;
+	box-sizing: border-box;
+	touch-action: manipulation;
+	font-feature-settings: 'case' 1, 'rlig' 1, 'calt' 0;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: transparent;
+	-moz-osx-font-smoothing: grayscale;
+	scroll-behavior: smooth;
+}
+
+html,
+body {
+	font-family: var(--font-poppins);
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: var(--background-primary);
+	color: var(--text-primary);
+}
+
+body {
+	position: relative;
+	min-height: 100%;
+	margin: 0;
+}
+
+body::-webkit-scrollbar {
+	display: none; /* Hide scrollbar for Chrome, Safari and Opera https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
+}
+
+a {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
