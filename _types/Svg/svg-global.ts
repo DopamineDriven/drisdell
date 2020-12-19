@@ -1,6 +1,6 @@
 import { CSSProperties } from 'react';
 
-export default interface SvgGlobal {
+export default interface SvgAbstracted {
 	width?: string;
 	height?: string;
 	root?: string;

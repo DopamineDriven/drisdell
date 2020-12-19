@@ -1,1 +1,1 @@
-export type { default as SvgGlobal } from './Svg';
+export type { default as SvgAbstracted } from './Svg';
