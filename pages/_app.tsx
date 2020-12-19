@@ -25,8 +25,8 @@ function App({ Component, pageProps }: AppProps) {
 	return <Component {...pageProps} />;
 }
 
+export default App;
+
 export function reportWebVitals(metric: NextWebVitalsMetric) {
 	console.debug(metric);
 }
-
-export default App;

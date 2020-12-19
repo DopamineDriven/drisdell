@@ -50,7 +50,7 @@ const Navbar: FC<NavbarProps> = props => {
 								</button>
 							</div>
 							<div className='flex-shrink-0 flex items-center'>
-								<Logo classNameParent={css.jujisvg} width='7rem' height='7rem' />
+								<Logo classNameParent={css.jujisvg} width='10rem' height='10rem' />
 							</div>
 							<div className='hidden md:ml-6 md:flex md:items-center md:space-x-4'>
 								<NavbarLinks />
@@ -59,7 +59,7 @@ const Navbar: FC<NavbarProps> = props => {
 						<div className='flex items-center'>
 							<div className='flex-shrink-0'>
 								<button
-									className={`relative inline-flex items-center px-4 py-2 border border-transparent shadow-sm font-medium rounded-md text-accents-6 bg-secondary-0 hover:bg-opacity-70 hover:bg-secondary-0 focus:outline-none focus:ring-offset-2 focus:ring-2 focus:ring-secondary-1 select-none`}
+									className={`relative inline-flex items-center px-4 py-2 border border-transparent shadow-sm font-medium rounded-md text-accents-6 primary-8 hover:bg-opacity-70 hover:primary-8 focus:outline-none focus:ring-offset-2 focus:ring-2 focus:ring-secondary-1 select-none`}
 									type='button'
 									onClick={() => router.push('/contact')}
 								>
@@ -117,7 +117,7 @@ const Navbar: FC<NavbarProps> = props => {
 					</div>
 				</div>
 				<div
-					className={cn('md:hidden bg-secondary-0', {
+					className={cn('md:hidden primary-8', {
 						block: !menuOpen,
 						hidden: menuOpen
 					})}
@@ -129,7 +129,7 @@ const Navbar: FC<NavbarProps> = props => {
 							)}
 						/>
 					</div>
-					<div className='pt-4 pb-3 border-t border-accents-5 bg-secondary-0'>
+					<div className='pt-4 pb-3 border-t border-accents-5 primary-8'>
 						<div className='flex items-center px-5 sm:px-6'>
 							<div className='flex-shrink-0'>
 								<Avatar className='h-10 w-10 ring-2 ring-accents-5' />

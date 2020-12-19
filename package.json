@@ -7,7 +7,7 @@
 	"license": "MIT",
 	"scripts": {
 		"dev": "next -p 3145",
-		"build": "next build",
+		"build": "next build && NODE_OPTIONS=max-old-space-size=8192",
 		"start": "next start",
 		"tsconfig:effective": "tsc --showConfig",
 		"client:schema": "dotenv cross-var yarn apollo client:download-schema --includes=graphql --addTypename --endpoint=%WORDPRESS_API_URL%",
