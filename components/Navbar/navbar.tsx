@@ -22,8 +22,8 @@ const Navbar: FC<NavbarProps> = props => {
 	return (
 		<>
 			<nav className={cn(root, css.root)}>
-				<div className='max-w-full mx-auto px-4 sm:px-6 lg:px-8 font-poppins text-accents-1'>
-					<div className='flex justify-between h-32'>
+				<div className='max-w-full mx-auto px-4 sm:px-6 lg:px-8 font-poppins text-primary-9'>
+					<div className='flex justify-between h-48'>
 						<div className='flex'>
 							<div className='-ml-2 mr-2 flex items-center md:hidden'>
 								<button
@@ -68,7 +68,7 @@ const Navbar: FC<NavbarProps> = props => {
 								</button>
 							</div>
 							<div className='hidden md:ml-4 md:flex-shrink-0 md:flex md:items-center'>
-								<button className='bg-accents-6 p-1 rounded-full text-offset-secondary-0 ring-2 ring-secondary-0 hover:text-accents-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-secondary-0 focus:ring-accent-6'>
+								<button className='bg-primary-8 p-1 rounded-full text-offset-secondary-0 ring-2 ring-secondary-0 hover:text-accents-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-secondary-0 focus:ring-accent-6'>
 									<span className='sr-only'>View Notifications</span>
 									<BellIcon classNameSVG='h-6 w-6' />
 								</button>
@@ -82,7 +82,7 @@ const Navbar: FC<NavbarProps> = props => {
 											onClick={() => setIsOpen(!isOpen)}
 										>
 											<span className='sr-only'>Open User Menu</span>
-											<Avatar className='h-12 w-12 ring-2 ring-accents-6 align-middle' />
+											<Avatar className='h-12 w-12 ring-0.5 ring-opacity-50 ring-primary-2 align-middle' />
 										</button>
 									</div>
 									<Transition

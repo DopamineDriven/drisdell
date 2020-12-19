@@ -41,7 +41,7 @@ const NavbarUserDropdown: FC<NavbarUserDropdownProps> = props => {
 					<div>
 						<Button
 							className={cn(
-								' bg-jujiMintCream rounded-full text-accents-6 text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-jujiCastletonGreen focus:ring-white z-50 '
+								' bg-accents-7 rounded-full text-accents-6 text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-jujiCastletonGreen focus:ring-white z-50 '
 							)}
 							onClick={() => onClick}
 						>

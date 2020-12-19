@@ -11,7 +11,7 @@ const FooterLogo = () => {
 					<DrisdellIcon
 						width='10rem'
 						height='10rem'
-						classNameSVG='bg-primary-9 rounded-full'
+						classNameSVG='bg-primary-0 rounded-full'
 					/>
 				</span>
 			</a>

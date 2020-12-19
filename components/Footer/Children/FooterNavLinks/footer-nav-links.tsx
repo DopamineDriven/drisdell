@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import cn from 'classnames';
+import { FC } from 'react';
 import { useRouter } from 'next/router';
 import css from './footer-nav-links.module.css';
 
@@ -32,7 +33,12 @@ const footerLinks: FooterNavRef[] = [
 	}
 ];
 
-const FooterNavLinks = () => {
+interface FooterNavLinksProps {
+	classNameRoot?: string;
+}
+
+const FooterNavLinks: FC<FooterNavLinksProps> = props => {
+	const { classNameRoot = '' } = props;
 	const { pathname } = useRouter();
 
 	const footerNavList = footerLinks.map((link, index) => (
@@ -52,7 +58,9 @@ const FooterNavLinks = () => {
 			</Link>
 		</li>
 	));
-	return <ul className={cn(css.footerLinksUl)}>{footerNavList}</ul>;
+	return (
+		<ul className={cn(classNameRoot, css.footerLinksUl)}>{footerNavList}</ul>
+	);
 };
 
 export default FooterNavLinks;

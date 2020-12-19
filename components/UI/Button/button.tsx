@@ -6,7 +6,7 @@ import React, {
 	useRef
 } from 'react';
 import mergeRefs from 'react-merge-refs';
-import { useButton } from 'react-aria/dist/types';
+import { useButton } from 'react-aria';
 import css from './button.module.css';
 import { LoadingDots } from '@components/UI';
 

@@ -1,28 +1,25 @@
-import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
+import { NextPage } from 'next';
 import cn from 'classnames';
 import { Layout } from '@components/index';
+import Head from 'next/head';
 
-const Index: NextPage & InferGetStaticPropsType<typeof getStaticProps> = () => {
+const Index: NextPage = () => {
 	return (
-		<Layout>
-			<div
-				className={cn(
-					'text-accents-3 mx-auto my-10 w-screen flex flex-row text-4xl justify-center min-w-full bg-primary-1 '
-				)}
-			>
-				It do work!
-			</div>
-		</Layout>
+		<>
+			<Head>
+				<title> LANDING </title>
+			</Head>
+			<Layout>
+				<div
+					className={cn(
+						'text-primary-1 mx-auto my-10 w-screen flex flex-row text-6xl justify-center min-w-full '
+					)}
+				>
+					Limpio
+				</div>
+			</Layout>
+		</>
 	);
-};
-
-const getStaticProps: GetStaticProps = async () => {
-	await Layout.arguments;
-	return {
-		props: {
-			param: Layout
-		}
-	};
 };
 
 export default Index;
