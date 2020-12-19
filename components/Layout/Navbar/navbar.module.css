@@ -1,0 +1,10 @@
+.root {
+	@apply bg-primary-9 select-none;
+}
+
+.jujisvg {
+	@apply block;
+	@screen lg {
+		@apply hidden;
+	}
+}
